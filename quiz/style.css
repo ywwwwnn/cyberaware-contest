@@ -1,0 +1,190 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: radial-gradient(circle, #0f2027, #203a43, #2c5364);
+  color: #f0f0f0;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: rgba(0, 0, 0, 0.6);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 700px;
+  width: 100%;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+h1 {
+  text-align: center;
+  color: #00e6e6;
+  margin-bottom: 1rem;
+}
+
+.question-block {
+  margin-bottom: 2rem;
+  animation: fadeIn 0.5s ease;
+}
+
+.question-block h2 {
+  margin-bottom: 0.5rem;
+}
+
+.timer {
+  color: #ff8888;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.options button {
+  display: block;
+  width: 100%;
+  margin-bottom: 0.75rem;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #00b3b3;
+  color: white;
+  transition: background 0.3s;
+}
+
+.options button:hover {
+  background-color: #008080;
+}
+
+.result {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+.recommendation {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 1rem;
+  border-radius: 10px;
+  margin-top: 1rem;
+}
+
+.timer-container {
+  width: 100%;
+  height: 20px; /* 시간 제한 바 높이 */
+  background-color: #eee;
+  border-radius: 10px;
+  margin-bottom: 8px;
+  overflow: hidden;
+}
+
+.question-block h2 {
+  text-align: center;
+}
+
+#timer-bar {
+  height: 100%;
+  width: 100%;
+  background-color: #ff4d4d;
+  opacity: 0.6;
+  transition: width 1s linear;
+  display: flex;               /* 플렉스 컨테이너 */
+  justify-content: center;     /* 가로 중앙 정렬 */
+  align-items: center;         /* 세로 중앙 정렬 */
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+  user-select: none;           /* 텍스트 선택 방지 */
+  
+}
+
+.progress-container {
+  width: 100%;
+  height: 20px; /* 남은 문제 수 바 높이 */
+  background-color: #eee;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#progress-bar {
+  height: 100%;
+  width: 0%;
+  background-color: #4caf50;
+  color: white;
+  font-weight: bold;
+  font-size: 0.9rem;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: width 0.3s ease-in-out;
+}
+
+
+.progress-bar {
+  position: absolute;
+  top: 0; left: 0;
+  height: 100%;
+  background-color: #4caf50; /* 진행 바 초록색 예시 */
+  width: 0%;
+  transition: width 0.5s ease;
+  z-index: 2;
+}
+
+#answer-feedback {
+  text-align: center;
+  margin-top: 1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
+  white-space: pre-line; /* 줄바꿈(\n)도 지원하게 */
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.next-action {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 1.5rem;
+  margin-top: 2.5rem;
+  text-align: center;
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.next-action h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+  color: #a3d9ff;
+}
+
+.next-action .highlight {
+  color: #7ed6ff;
+}
+
+.next-action p {
+  margin-bottom: 1.2rem;
+  color: #d0eaff;
+}
+
+.action-button {
+  display: inline-block;
+  padding: 0.8rem 1.5rem;
+  background: linear-gradient(135deg, #00ccff, #3399ff);
+  color: white;
+  text-decoration: none;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: all 0.25s ease;
+}
+
+.action-button:hover {
+  background: linear-gradient(135deg, #0088cc, #2677cc);
+  transform: translateY(-2px);
+}
+

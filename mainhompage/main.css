@@ -1,0 +1,181 @@
+/* 🔐 메인 보안 교육 페이지 스타일 - 하이테크 & 안전감 테마 */
+
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;600&display=swap');
+
+body {
+  font-family: 'Rajdhani', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: url('overviewimg.jpg') no-repeat center center fixed;
+  background-size: cover;
+  color: #c9e7f5;
+  line-height: 1.8;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 3rem 1rem;
+  text-align: center;
+  border-bottom: 2px solid #00bfff;
+  box-shadow: 0 0 20px rgba(0, 191, 255, 0.3);
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #00e5ff;
+  text-shadow: 0 0 8px #00e5ff;
+}
+
+header p {
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+  color: #9fc9ff;
+}
+
+nav {
+  background: rgba(15, 20, 30, 0.95);
+  padding: 1rem;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #00bfff;
+}
+
+nav a {
+  margin: 0 0.75rem;
+  text-decoration: none;
+  color: #40e0d0;
+  font-weight: 600;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.5);
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  background: #00bfff;
+  color: #000;
+  box-shadow: 0 0 8px #00e5ff;
+}
+
+main {
+  max-width: 960px;
+  margin: 3rem auto;
+  padding: 1rem;
+  background: rgba(15, 20, 30, 0.9);
+  border-radius: 1rem;
+  box-shadow: 0 0 30px rgba(0, 191, 255, 0.15);
+}
+
+section {
+  margin-bottom: 5rem;
+  padding: 2.5rem 1.8rem;
+  border: 2px solid rgba(0, 191, 255, 0.35);
+  border-left: 6px solid #00e5ff;
+  border-radius: 1.25rem;
+  background-color: rgba(20, 30, 50, 0.92);
+  box-shadow: 0 0 35px rgba(0, 191, 255, 0.2);
+  position: relative;
+}
+
+section::before {
+  content: "";
+  position: absolute;
+  top: 1.5rem;
+  left: -10px;
+  width: 12px;
+  height: 12px;
+  background: #00e5ff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px #38bdf8;
+}
+
+h2 {
+  color: #00e5ff;
+  border-left: 6px solid #00bfff;
+  padding-left: 1rem;
+  margin-bottom: 1.8rem;
+  font-size: 1.9rem;
+}
+
+h3 {
+  color: #7dd3fc;
+  margin-top: 3rem;
+  font-size: 1.3rem;
+  border-top: 1px dashed #3b82f6;
+  padding-top: 1.5rem;
+}
+
+ul {
+  list-style: none;
+  padding-left: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+ul li::before {
+  content: "🔹 ";
+  color: #00bfff;
+}
+
+ul li {
+  margin-bottom: 1.4rem;
+  line-height: 1.8;
+}
+
+p {
+  margin-bottom: 1.6rem;
+}
+
+p code, li code {
+  background-color: #1e293b;
+  color: #93c5fd;
+  padding: 0.2rem 0.45rem;
+  border-radius: 4px;
+  font-family: 'Courier New', monospace;
+}
+
+a {
+  color: #38bdf8;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: #00e0ff;
+}
+
+em {
+  background: #1e3a8a;
+  padding: 0.35rem 0.7rem;
+  border-radius: 6px;
+  color: #facc15;
+  display: inline-block;
+  margin-top: 1rem;
+  font-style: normal;
+  font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 1.8rem;
+  }
+  nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+  }
+  main {
+    margin: 2rem 1rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.1rem;
+  }
+}
+
