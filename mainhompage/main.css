@@ -179,3 +179,19 @@ em {
   }
 }
 
+.survey-button {
+  display: inline-block;
+  background: linear-gradient(90deg, #00e5ff, #38bdf8);
+  color: #000;
+  padding: 1rem 2rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  border-radius: 50px;
+  text-decoration: none;
+  box-shadow: 0 0 18px rgba(0, 229, 255, 0.4);
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+.survey-button:hover {
+  background: linear-gradient(90deg, #38bdf8, #00e5ff);
+  transform: scale(1.05);
+}
