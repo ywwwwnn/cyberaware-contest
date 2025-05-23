@@ -121,7 +121,7 @@ function showResult() {
     emoji = "🟡";
     description = "보안 인식은 좋지만 약간의 허점이 있을 수 있습니다.";
     recommendations = ["VPN 사용 고려", "비밀번호 정기 변경"];
-    imagePath = "image/골드드.png";
+    imagePath = "image/골드.png";
   } else if (score >= 14) {
     tier = "Silver (S)";
     emoji = "⚪";
