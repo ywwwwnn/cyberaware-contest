@@ -66,9 +66,10 @@ main.overview {
   text-shadow: 0 0 8px #00e5ff;
 }
 
-.section-card p {
-  margin: 0;
-  color: #aad5ff;
-  line-height: 1.6;
+/* 본문 링크: 평범한 텍스트처럼 보이게 */
+.section-card p a {
+  color: inherit;
+  text-decoration: none;
+  font-weight: inherit;
 }
 
