@@ -167,7 +167,7 @@ result.appendChild(resultInfo);
 }
 
 // 문제 불러오기
-fetch("questions.json?t=" + new Date().getTime())
+fetch("questions_cleaned.json?t=" + new Date().getTime())
   .then(res => res.json())
   .then(data => {
     questions = shuffle(data).slice(0, 10);
